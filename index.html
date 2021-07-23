@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Live Password</title>
+</head>
+<body>
+    <div class="container">
+      <div class="main">
+        <audio controls autoplay loop>
+          <source src="./assets/track.mp3" type="audio/mp3">
+        </audio>
+        <button onclick="showPassword()">Mostrar senha do config</button>
+        <button onclick="clearPassword()">Ocultar senha</button>
+        <div class="divPassword">
+          <h2 class="showPassword"></h2>
+        </div>
+      </div>
+    </div>
+
+  <script src="./scripts/date.js"></script>
+</body>
+</html>
