@@ -6,7 +6,7 @@ let tela = document.querySelector(".showPassword");
 
       let month = new Date().getMonth();
 
-      let day = new Date().getUTCDate();
+      let day = new Date().getDate();
 
       let hour = new Date().getHours();
 
