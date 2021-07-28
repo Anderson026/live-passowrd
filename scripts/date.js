@@ -1,6 +1,8 @@
 let tela = document.querySelector(".showPassword");
+let song = document.querySelector(".song");
 
     function showPassword() {
+      song.play();
 
       let year = new Date().getFullYear();
 
