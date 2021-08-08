@@ -29,30 +29,46 @@ html, body {
   align-items: center;
 }
 
+.song {
+  margin-bottom: 10px;
+}
+
 .divPassword {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  
 }
 
 .divPassword h2 {
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 7rem;
   font-weight: bold;
   color: #1F6A8F;
 }
 
-.divPassword, button {
-  width: 300px;
-  height: 54px;
-  border-radius: 50px;
-
-  
+.ocultText {
+  opacity: 0;
+  transition: all 0.5s;
 }
 
+.btn-show {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+
 button {
+  width: 300px;
+  height: 54px;
+  border-radius: 50px; 
   font-size: 1.6rem;
   font-weight: bold;
   background-color: #1F6A8F;
   color: #FFF;
+  margin-bottom: 10px;
 }
 
 @keyframes changeButton {

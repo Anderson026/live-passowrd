@@ -14,8 +14,12 @@ let song = document.querySelector(".song");
 
       let result = (year + month + 1 + day + hour) - 75;
 
+      tela.classList.remove("ocultText");
+      tela.classList.add("btn-show");
       tela.innerHTML = result;
     }
+    
     function clearPassword() {
-      tela.innerHTML = ""
+      tela.classList.remove("btn-show");
+      tela.classList.add("ocultText");
     }
