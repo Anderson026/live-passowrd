@@ -14,14 +14,15 @@ html, body {
   height: 100%;
   background-image: linear-gradient(#f3810e, orange);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 
 }
 
 .main {
-  width: 400px;
-  height: 250px;
+  width: 40%;
+  height: 85%;
 
   display: flex;
   flex-direction: column;
@@ -33,20 +34,27 @@ html, body {
   margin-bottom: 10px;
 }
 
-.divPassword {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+.player {
+  border: 3px solid #0b425e;
   width: 300px;
-  
+  height: 54px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* background-color: #FFF; */
 }
 
-.divPassword h2 {
-  margin: 0;
-  font-size: 7rem;
-  font-weight: bold;
-  color: #1F6A8F;
+.player img {
+  width: 35px;
+  height: 35px;
+}
+
+.player img:hover {
+  width: 40px;
+  height: 40px;
 }
 
 .ocultText {
@@ -59,11 +67,18 @@ html, body {
   transition: all 0.5s;
 }
 
+.divBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
 
 button {
   width: 300px;
   height: 54px;
-  border-radius: 50px; 
+  border-radius: 8px; 
   font-size: 1.6rem;
   font-weight: bold;
   background-color: #1F6A8F;
@@ -82,3 +97,32 @@ button:hover {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
+.divPassword {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 300px;
+  width: 300px;
+  border: 3px solid #0b425e;
+  border-radius: 8px;
+  /* margin-top: 10px; */
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.divPassword p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1F6A8F;
+  text-align: start;
+}
+
+.divPassword strong {
+  font-size: 2.1rem;
+  color: #f3810e;
+}
+
