@@ -7,7 +7,7 @@ const divPassword = document.querySelector(".divPassword");
 let date = new Date();
 let hour = date.getHours();
 let day = date.getDate();
-let month = date.getMonth() + 1;
+let month = date.getMonth();
 let year = date.getFullYear();
 
 
@@ -17,10 +17,10 @@ let year = date.getFullYear();
     let calculaPasswordLoja = (hour + day + month + year) - 2000;
     passwordLoja.innerHTML = `Senha do acesso ao Live loja: <strong>${calculaPasswordLoja}</strong>`;
 
-    let calculatePasswordConfig = (hour + day + month + year) - 75;
+    let calculatePasswordConfig = (hour + day + month + 1 + year) - 75;
     passwordConfig.innerHTML = `Senha do config do PDV e Concentrador: <strong>${calculatePasswordConfig}</strong>`;
 
-    let calculatePasswordCbc = (year - month - day - hour);
+    let calculatePasswordCbc = (year - (month + 1) - day - hour);
     passworCbc.innerHTML = `Senha do config CBC Manager 2k9: <strong>${calculatePasswordCbc}</strong>`;
     
     divPassword.classList.remove("ocultText");
