@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" href="./assets/key.png" type="image/x-icon">
+  <title>Live Password</title>
+</head>
+<body>
+    <div class="container">
+      <div class="main">
+        <audio src="./assets/songs/01. Into The Lungs Of Hell.mp3" id="audio" ontimeupdate="timeupdate()">
+        </audio>
+        <div class="player">
+          <img id="prevSong" src="./assets/previous.png" alt="Previous Button">
+          <img id="playPause" src="./assets/play-button.png" alt="Play Button">
+          <img id="stopSong" src="./assets/stop.png" alt="Stop Button">
+          <img id="nextSong" src="./assets/next.png" alt="Next Button">
+        </div>
+        <div class="divBtn">
+          <button id="btn">Mostrar/Atualizar Senhas</button>
+          <button onclick="clearPassword()">Ocultar Senhas</button>
+          <a href="https://live-implantacao.netlify.app/">
+            <button>Acessar o Live Implantação</button>
+          </a>
+        </div>
+        <div class="divPassword ocultText">
+          <!-- <h2 class="showPassword ocultText"></h2> -->
+          <p class="passwordPosto"></p>
+          <p class="passwordLoja"></p>
+          <p class="passwordConfig"></p>
+          <p class="passworCbc "></p>
+          <p class="">Senha do config da Getcard: <strong>secnas256</strong></p>
+          <p class="">Senha do Gsurf: <strong>Live202108</strong></p>
+        </div>
+      </div>
+    </div>
+
+  <script src="./scripts/date.js"></script>
+  <script src="./scripts/player.js"></script>
+</body>
+</html>
